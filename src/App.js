@@ -1,14 +1,12 @@
-import ThemeProvider from './contexts/ThemeContext';
 import AppLayout from './layouts/AppLayout';
+import AppRouter from './routes/index'
 
 function App ()
 {
   return (
-    <ThemeProvider>
-      <AppLayout>
-
-      </AppLayout>
-    </ThemeProvider>
+    <AppLayout>
+      <AppRouter />
+    </AppLayout>
   );
 }
 
